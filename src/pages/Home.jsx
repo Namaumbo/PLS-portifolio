@@ -129,7 +129,7 @@ export default function Home() {
               />
             </div>
             <div className="flex justify-center mt-8">
-              <Button variant="outline" asChild>
+              <Button className="bg-foreground text-white" asChild>
                 <Link href="/projects">
                   View All Projects
                   <ArrowRight className="ml-2 h-4 w-4" />
