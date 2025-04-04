@@ -11,6 +11,8 @@ import {
   Outlet,
 } from "react-router-dom";
 import Layout from "./Layout";
+import AboutPage from "./pages/About";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/projects" element={<Projects />} />
           </Route>
         </Routes>
       </Router>

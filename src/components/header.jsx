@@ -9,19 +9,19 @@ function NavBarComponent() {
         <div className=" m-auto container flex h-18 items-center justify-between">
           <nav className="hidden gap-6 md:flex">
             <Link
-              to="#about"
+              to="/about"
               className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               About
             </Link>
             <Link
-              to="#skills"
+              to="/skills"
               className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               Skills
             </Link>
             <Link
-              to="#projects"
+              to="/projects"
               className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               Projects
