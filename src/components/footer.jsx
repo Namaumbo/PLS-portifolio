@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { ArrowRight, Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -12,22 +11,22 @@ function FooterComponent() {
           </p>
           <div className="flex gap-4">
             <Button asChild size="icon" variant="ghost">
-              <Link href="https://github.com" target="_blank">
+              <a href="https://github.com" target="_blank" rel="noreferrer">
                 <Github className="h-4 w-4" />
                 <span className="sr-only">GitHub</span>
-              </Link>
+              </a>
             </Button>
             <Button asChild size="icon" variant="ghost">
-              <Link href="https://linkedin.com" target="_blank">
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer">
                 <Linkedin className="h-4 w-4" />
                 <span className="sr-only">LinkedIn</span>
-              </Link>
+              </a>
             </Button>
             <Button asChild size="icon" variant="ghost">
-              <Link href="https://twitter.com" target="_blank">
+              <a href="https://twitter.com" target="_blank" rel="noreferrer">
                 <Twitter className="h-4 w-4" />
                 <span className="sr-only">Twitter</span>
-              </Link>
+              </a>
             </Button>
           </div>
         </div>

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 
 import {
@@ -11,6 +10,12 @@ import {
 import { Badge } from "@/components/ui/badge";
 
 export function ProjectCard({ title, description, tags, image, link }) {
+  const safeLink =
+    typeof link === "string" && link.length
+      ? /^(https?:\/\/|mailto:|tel:|\/|#)/i.test(link)
+        ? link
+        : `https://${link}`
+      : "#";
   return (
     <Card className="overflow-hidden group bg-black border-primary">
       <div className="relative overflow-hidden">
@@ -20,13 +25,15 @@ export function ProjectCard({ title, description, tags, image, link }) {
           className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
-          <Link
-            href={link}
+          <a
+            href={safeLink}
             target="_blank"
+            rel="noreferrer"
             className="text-foreground hover:text-primary"
+            aria-label={`Open ${title}`}
           >
             <ArrowUpRight className="h-6 w-6" />
-          </Link>
+          </a>
         </div>
       </div>
       <div className="p-4 bg-black">

@@ -16,7 +16,6 @@ import {
   User,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 
 const GlowingCard = () => {
   return (
@@ -45,7 +44,7 @@ const GlowingCard = () => {
                     </div>
                     <div className="pt-4">
                       <Button className="w-full bg-foreground" asChild>
-                        <Link href="/contact">Contact Me</Link>
+                        <Link to="/contact">Contact Me</Link>
                       </Button>
                     </div>
                     <div>
@@ -54,9 +53,9 @@ const GlowingCard = () => {
                         className="w-full text-white"
                         asChild
                       >
-                        <Link href="/resume.pdf" target="_blank">
+                        <a href="/resume.pdf" target="_blank" rel="noreferrer">
                           Download Resume
-                        </Link>
+                        </a>
                       </Button>
                     </div>
                   </div>
@@ -81,10 +80,10 @@ const GlowingCard = () => {
               </div>
 
               <div>
-                <Button  className="w-full bg-foreground text-white" asChild>
-                  <Link href="/resume.pdf" target="_blank">
+                <Button className="w-full bg-foreground text-white" asChild>
+                  <a href="/resume.pdf" target="_blank" rel="noreferrer">
                     Download Resume
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </div>

@@ -36,10 +36,14 @@ export default function Home() {
                 size="icon"
                 variant="ghost"
               >
-                <Link href="https://github.com/Namaumbo" target="_blank">
+                <a
+                  href="https://github.com/Namaumbo"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Github className="h-5 w-5" />
                   <span className="sr-only">GitHub</span>
-                </Link>
+                </a>
               </Button>
               <Button
                 className="bg-secondary"
@@ -47,10 +51,10 @@ export default function Home() {
                 size="icon"
                 variant="ghost"
               >
-                <Link href="https://linkedin.com" target="_blank">
+                <a href="https://linkedin.com" target="_blank" rel="noreferrer">
                   <Linkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
-                </Link>
+                </a>
               </Button>
               <Button
                 className="bg-secondary"
@@ -58,10 +62,10 @@ export default function Home() {
                 size="icon"
                 variant="ghost"
               >
-                <Link href="https://twitter.com" target="_blank">
+                <a href="https://twitter.com" target="_blank" rel="noreferrer">
                   <Twitter className="h-5 w-5" />
                   <span className="sr-only">Twitter</span>
-                </Link>
+                </a>
               </Button>
             </div>
           </div>
@@ -107,11 +111,11 @@ export default function Home() {
             </h2>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
-                title="E-commerce Platform"
-                description="A full-featured online store with cart, checkout, and payment processing"
-                tags={["Next.js", "Stripe", "Tailwind CSS"]}
-                image="/mine.png"
-                link="https://project1.example.com"
+                title="WellthAi Platform"
+                description="A full-featured online platform for WellthAi used by the clinical officers to manage their patients and their data"
+                tags={["Next.js", "Tailwind CSS", "TypeScript"]}
+                image="/weithAi2.png"
+                link="https://develop.d3jfk7zm1jpg1f.amplifyapp.com/"
               />
               <ProjectCard
                 title="Task Management App"
@@ -130,7 +134,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center mt-8">
               <Button className="bg-foreground text-white" asChild>
-                <Link href="/projects">
+                <Link to="/projects">
                   View All Projects
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -148,15 +152,15 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="bg-foreground" asChild>
-                <Link href="mailto:alex@example.com">
+                <a href="mailto:alex@example.com">
                   <Mail className="mr-2 h-4 w-4" />
                   Email Me
-                </Link>
+                </a>
               </Button>
               <Button variant="outline" asChild>
-                <Link href="https://calendly.com" target="_blank">
+                <a href="https://calendly.com" target="_blank" rel="noreferrer">
                   Schedule a Call
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

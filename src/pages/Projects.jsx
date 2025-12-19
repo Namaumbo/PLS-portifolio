@@ -1,13 +1,13 @@
-
-import { ProjectCard } from "@/components/project-card"
-import {Link} from "react-router-dom"
-import { ArrowLeft, Briefcase, GraduationCap, Heart, MapPin, User } from "lucide-react"
+import { ProjectCard } from "@/components/project-card";
+import { Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
+import { Button } from "@/components/ui/button";
 export default function Projects() {
   return (
     <div className="container py-12">
       <div className="flex items-center mb-8">
         <Button variant="ghost" asChild className="mr-4">
-          <Link href="/">
+          <Link to="/">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Home
           </Link>
@@ -60,5 +60,5 @@ export default function Projects() {
         />
       </div>
     </div>
-  )
+  );
 }

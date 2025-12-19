@@ -26,7 +26,7 @@ export default function AboutPage() {
     <div className="m-auto container py-12">
       <div className="flex items-center mb-8">
         <Button variant="ghost" asChild className="mr-4">
-          <Link href="/">
+          <Link to="/">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Home
           </Link>
@@ -39,23 +39,23 @@ export default function AboutPage() {
           <GlowingCard/>
         </div>
 
-        <div className="md:col-span-2 border border-[#27272a] p-8 rounded-lg">
-          <Tabs defaultValue="bio" className="w-full ">
-            <TabsList className="grid w-full grid-cols-4">
+        <div className="md:col-span-2 rounded-xl border border-border/60 bg-card/20 p-6 shadow-sm backdrop-blur supports-[backdrop-filter]:bg-card/10 sm:p-8">
+          <Tabs defaultValue="bio" className="w-full">
+            <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4">
               <TabsTrigger value="bio">
-                <User className="h-4 w-4 mr-2" />
-                <span className="hidden sm:inline ">Bio</span>
+                <User className="h-4 w-4" />
+                <span className="hidden sm:inline">Bio</span>
               </TabsTrigger>
               <TabsTrigger value="experience">
-                <Briefcase className="h-4 w-4 mr-2" />
-                <span className="hidden sm:inline line">Experience</span>
+                <Briefcase className="h-4 w-4" />
+                <span className="hidden sm:inline">Experience</span>
               </TabsTrigger>
               <TabsTrigger value="education">
-                <GraduationCap className="h-4 w-4 mr-2" />
+                <GraduationCap className="h-4 w-4" />
                 <span className="hidden sm:inline">Education</span>
               </TabsTrigger>
               <TabsTrigger value="interests">
-                <Heart className="h-4 w-4 mr-2" />
+                <Heart className="h-4 w-4" />
                 <span className="hidden sm:inline">Interests</span>
               </TabsTrigger>
             </TabsList>
