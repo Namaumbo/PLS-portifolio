@@ -1,34 +1,50 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { ArrowRight, Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 function NavBarComponent() {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+  const isActiveHash = (hash) => isHome && location.hash === hash;
+
+  const linkBase =
+    "flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-foreground";
+  const linkActive = "text-foreground";
+
   return (
     <>
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className=" m-auto container flex h-18 items-center justify-between">
           <nav className="hidden gap-6 md:flex">
-            <Link
+            <NavLink
               to="/about"
-              className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className={({ isActive }) =>
+                cn(linkBase, isActive && linkActive)
+              }
             >
               About
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/skills"
-              className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className={({ isActive }) =>
+                cn(linkBase, isActive && linkActive)
+              }
             >
               Skills
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/projects"
-              className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className={({ isActive }) =>
+                cn(linkBase, isActive && linkActive)
+              }
             >
               Projects
-            </Link>
+            </NavLink>
             <Link
-              to="#contact"
-              className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              to="/#contact"
+              aria-current={isActiveHash("#contact") ? "page" : undefined}
+              className={cn(linkBase, isActiveHash("#contact") && linkActive)}
             >
               Contact
             </Link>

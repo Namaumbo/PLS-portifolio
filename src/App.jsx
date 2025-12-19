@@ -13,6 +13,7 @@ import {
 import Layout from "./Layout";
 import AboutPage from "./pages/About";
 import Projects from "./pages/Projects";
+import SkillsPage from "./pages/Skills";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/skills" element={<SkillsPage />} />
             <Route path="/projects" element={<Projects />} />
           </Route>
         </Routes>

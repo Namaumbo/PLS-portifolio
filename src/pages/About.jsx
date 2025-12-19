@@ -36,7 +36,7 @@ export default function AboutPage() {
 
       <div className="grid gap-8 md:grid-cols-3 ">
         <div className="md:col-span-1">
-          <GlowingCard/>
+          <GlowingCard />
         </div>
 
         <div className="md:col-span-2 rounded-xl border border-border/60 bg-card/20 p-6 shadow-sm backdrop-blur supports-[backdrop-filter]:bg-card/10 sm:p-8">
