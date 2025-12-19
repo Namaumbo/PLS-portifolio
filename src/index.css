@@ -118,3 +118,59 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  @keyframes pls-float {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -18px, 0);
+    }
+  }
+
+  @keyframes pls-drift {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+    50% {
+      transform: translate3d(14px, -10px, 0) rotate(6deg);
+    }
+  }
+
+  @keyframes pls-spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .pls-anim-float {
+    animation: pls-float 7s ease-in-out infinite;
+  }
+
+  .pls-anim-float-slow {
+    animation: pls-float 11s ease-in-out infinite;
+  }
+
+  .pls-anim-drift {
+    animation: pls-drift 9s ease-in-out infinite;
+  }
+
+  .pls-anim-spin {
+    animation: pls-spin-slow 22s linear infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .pls-anim-float,
+    .pls-anim-float-slow,
+    .pls-anim-drift,
+    .pls-anim-spin {
+      animation: none !important;
+    }
+  }
+}

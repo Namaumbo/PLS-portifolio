@@ -152,7 +152,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="bg-foreground" asChild>
-                <a href="mailto:alex@example.com">
+                <a href="mailto:daelo.namaumbo@gmail.com">
                   <Mail className="mr-2 h-4 w-4" />
                   Email Me
                 </a>

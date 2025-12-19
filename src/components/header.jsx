@@ -1,13 +1,9 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
-import { ArrowRight, Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { NavLink } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 function NavBarComponent() {
-  const location = useLocation();
-  const isHome = location.pathname === "/";
-  const isActiveHash = (hash) => isHome && location.hash === hash;
-
   const linkBase =
     "flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-foreground";
   const linkActive = "text-foreground";
@@ -19,35 +15,28 @@ function NavBarComponent() {
           <nav className="hidden gap-6 md:flex">
             <NavLink
               to="/about"
-              className={({ isActive }) =>
-                cn(linkBase, isActive && linkActive)
-              }
+              className={({ isActive }) => cn(linkBase, isActive && linkActive)}
             >
               About
             </NavLink>
             <NavLink
               to="/skills"
-              className={({ isActive }) =>
-                cn(linkBase, isActive && linkActive)
-              }
+              className={({ isActive }) => cn(linkBase, isActive && linkActive)}
             >
               Skills
             </NavLink>
             <NavLink
               to="/projects"
-              className={({ isActive }) =>
-                cn(linkBase, isActive && linkActive)
-              }
+              className={({ isActive }) => cn(linkBase, isActive && linkActive)}
             >
               Projects
             </NavLink>
-            <Link
-              to="/#contact"
-              aria-current={isActiveHash("#contact") ? "page" : undefined}
-              className={cn(linkBase, isActiveHash("#contact") && linkActive)}
+            <NavLink
+              to="/contact"
+              className={({ isActive }) => cn(linkBase, isActive && linkActive)}
             >
               Contact
-            </Link>
+            </NavLink>
           </nav>
           <div className="flex items-center gap-2">
             <Button className="bg-foreground">
