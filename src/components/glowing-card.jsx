@@ -53,7 +53,11 @@ const GlowingCard = () => {
                         className="w-full text-white"
                         asChild
                       >
-                        <a href="/resume.pdf" target="_blank" rel="noreferrer">
+                        <a
+                          href="/Daelo_Namaumbo_Updated_resume.pdf"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           Download Resume
                         </a>
                       </Button>
@@ -81,7 +85,11 @@ const GlowingCard = () => {
 
               <div>
                 <Button className="w-full bg-foreground text-white" asChild>
-                  <a href="/resume.pdf" target="_blank" rel="noreferrer">
+                  <a
+                    href="/Daelo_Namaumbo_Updated_resume.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Download Resume
                   </a>
                 </Button>

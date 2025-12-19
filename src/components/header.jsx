@@ -39,9 +39,15 @@ function NavBarComponent() {
             </NavLink>
           </nav>
           <div className="flex items-center gap-2">
-            <Button className="bg-foreground">
-              Resume
-              <ArrowRight className="ml-2 h-4 w-4" />
+            <Button className="bg-foreground" asChild>
+              <a
+                href="/Daelo_Namaumbo_Updated_resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Resume
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
             </Button>
           </div>
         </div>
