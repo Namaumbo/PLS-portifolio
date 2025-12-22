@@ -64,7 +64,7 @@ export default function AboutPage() {
               <div className="prose dark:prose-invert max-w-none">
                 <h2 className="text-white">Hello, I'm Daelo</h2>
                 <p className="text-white">
-                  I'm a passionate full-stack developer with over 5 years of
+                  I'm a passionate full-stack developer with over 3 years of
                   experience building web applications that solve real-world
                   problems. My journey in software development began during my
                   college years when I built my first web application for a
@@ -179,14 +179,14 @@ export default function AboutPage() {
             <TabsContent value="education" className="mt-6">
               <Timeline
                 items={[
-                  {
-                    title: "Master of Computer Science",
-                    company: "Stanford University",
-                    date: "2015 - 2017",
-                    description:
-                      "Specialized in Human-Computer Interaction and Web Technologies. Thesis on 'Improving User Experience in Progressive Web Applications'.",
-                    skills: [],
-                  },
+                  // {
+                  //   title: "Master of Computer Science",
+                  //   company: "Stanford University",
+                  //   date: "2015 - 2017",
+                  //   description:
+                  //     "Specialized in Human-Computer Interaction and Web Technologies. Thesis on 'Improving User Experience in Progressive Web Applications'.",
+                  //   skills: [],
+                  // },
                   {
                     title: "Bachelor of Science in Computer Science",
                     company: "University of California, Berkeley",
