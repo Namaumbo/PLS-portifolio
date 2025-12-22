@@ -75,10 +75,16 @@ export default function Home() {
               About Me
             </h2>
             <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              I'm a passionate full-stack developer with 2+ years of experience
+              I'm a passionate full-stack developer with 3+ years of experience
               building web applications. I specialize in React, Next.js, and
               Node.js, with a strong focus on creating performant, accessible,
               and visually appealing user interfaces.
+            </p>
+            <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              On the backend, I'm equally enthusiastic—I've built robust APIs
+              and services using Java (Spring Boot), Python (Flask), and
+              JavaScript (Express and Node.js), crafting scalable solutions for
+              a variety of use cases.
             </p>
             <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               When I'm not coding, you can find me hiking, reading sci-fi
