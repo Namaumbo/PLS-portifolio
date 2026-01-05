@@ -69,6 +69,10 @@ const GlowingCard = () => {
                 <img
                   src="/mine.png"
                   alt="Developer profile"
+                  width={128}
+                  height={128}
+                  loading="lazy"
+                  decoding="async"
                   className="object-cover"
                 />
               </div>

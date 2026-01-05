@@ -15,7 +15,12 @@ export default function Home() {
               <img
                 src="/mine.png"
                 alt="Developer profile"
-                className="object-cover "
+                width={96}
+                height={96}
+                loading="eager"
+                decoding="async"
+                fetchPriority="high"
+                className="object-cover"
               />
             </div>
             <div className="space-y-2">

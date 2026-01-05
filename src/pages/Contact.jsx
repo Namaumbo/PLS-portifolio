@@ -111,6 +111,10 @@ export default function Contact() {
             <img
               src="/profile.png"
               alt="Developer profile"
+              width={420}
+              height={460}
+              loading="eager"
+              decoding="async"
               className="h-[460px] w-full object-cover"
             />
           </div>
