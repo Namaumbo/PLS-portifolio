@@ -175,12 +175,18 @@ export default function AboutPage() {
                       ],
                     },
                     {
-                      title: "Full Stack Developer",
-                      company: "Startup Innovations",
-                      date: "2019 - 2021",
+                      title: "Full-stack Developer",
+                      company: "Dext Consultium | Ghana",
+                      date: "2024- present",
                       description:
-                        "Developed and maintained multiple client projects. Built a custom e-commerce platform that increased sales by 25% for a key client.",
-                      skills: ["React", "Node.js", "MongoDB", "AWS"],
+                        "Developed and maintained AI platform for clinical officers and admin panel to manage the platform and the users.",
+                      skills: [
+                        "next.js",
+                        "Node.js",
+                        "MongoDB",
+                        "Tailwind CSS",
+                        "Express",
+                      ],
                     },
                     {
                       title: "Junior Web Developer",
