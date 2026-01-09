@@ -146,34 +146,53 @@ export default function AboutPage() {
             </TabsContent>
 
             <TabsContent value="experience" className="mt-6">
-              <Timeline
-                items={[
-                  {
-                    title: "Senior Frontend Developer",
-                    company: "TechCorp Inc.",
-                    date: "2021 - Present",
-                    description:
-                      "Lead the frontend development team in building a SaaS platform used by over 10,000 customers. Implemented performance optimizations that improved page load times by 40%.",
-                    skills: ["React", "Next.js", "TypeScript", "GraphQL"],
-                  },
-                  {
-                    title: "Full Stack Developer",
-                    company: "Startup Innovations",
-                    date: "2019 - 2021",
-                    description:
-                      "Developed and maintained multiple client projects. Built a custom e-commerce platform that increased sales by 25% for a key client.",
-                    skills: ["React", "Node.js", "MongoDB", "AWS"],
-                  },
-                  {
-                    title: "Junior Web Developer",
-                    company: "Digital Agency",
-                    date: "2017 - 2019",
-                    description:
-                      "Collaborated with designers and senior developers to build responsive websites and web applications for various clients.",
-                    skills: ["JavaScript", "HTML/CSS", "PHP", "WordPress"],
-                  },
-                ]}
-              />
+              <div className="prose dark:prose-invert max-w-none">
+                <Timeline
+                  items={[
+                    {
+                      title: "Full-Stack Developer",
+                      company: "Credit Data CRB | MW",
+                      date: "2024 - Present",
+                      description:
+                        "Developed and maintained the Credit Data CRB systems using Java, PHP and Javascript",
+                      skills: [
+                        "Java",
+                        "Spring Boot",
+                        "PHP",
+                        "Javascript",
+                        "React",
+                        "Next.js",
+                        "Node.js",
+                        "Tailwind CSS",
+                        "PostgreSQL",
+                        "MongoDB",
+                        "Redis",
+                        "Docker",
+                        "Git",
+                        "ES",
+                        "Agile",
+                        "Scrum",
+                      ],
+                    },
+                    {
+                      title: "Full Stack Developer",
+                      company: "Startup Innovations",
+                      date: "2019 - 2021",
+                      description:
+                        "Developed and maintained multiple client projects. Built a custom e-commerce platform that increased sales by 25% for a key client.",
+                      skills: ["React", "Node.js", "MongoDB", "AWS"],
+                    },
+                    {
+                      title: "Junior Web Developer",
+                      company: "Digital Agency",
+                      date: "2017 - 2019",
+                      description:
+                        "Collaborated with designers and senior developers to build responsive websites and web applications for various clients.",
+                      skills: ["JavaScript", "HTML/CSS", "PHP", "WordPress"],
+                    },
+                  ]}
+                />
+              </div>
             </TabsContent>
 
             <TabsContent value="education" className="mt-6">
@@ -213,48 +232,50 @@ export default function AboutPage() {
 
             <TabsContent value="interests" className="mt-6">
               <div className="grid gap-6 sm:grid-cols-2">
-                <Card>
+                <Card className="border-border/60 bg-card/20 shadow-sm backdrop-blur supports-[backdrop-filter]:bg-card/10">
                   <CardHeader>
-                    <CardTitle>Outdoor Activities</CardTitle>
+                    <CardTitle className="text-white">
+                      Outdoor Activities
+                    </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">
+                    <p className="text-white/80">
                       When I'm not coding, I love hiking and exploring nature.
                       I've hiked over 20 trails in California and aim to
                       complete the Pacific Crest Trail someday.
                     </p>
                   </CardContent>
                 </Card>
-                <Card>
+                <Card className="border-border/60 bg-card/20 shadow-sm backdrop-blur supports-[backdrop-filter]:bg-card/10">
                   <CardHeader>
-                    <CardTitle>Reading</CardTitle>
+                    <CardTitle className="text-white">Reading</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">
+                    <p className="text-white/80">
                       I'm an avid reader of science fiction and technical books.
                       Some of my favorites include "Dune" by Frank Herbert and
                       "Clean Code" by Robert C. Martin.
                     </p>
                   </CardContent>
                 </Card>
-                <Card>
+                <Card className="border-border/60 bg-card/20 shadow-sm backdrop-blur supports-[backdrop-filter]:bg-card/10">
                   <CardHeader>
-                    <CardTitle>Open Source</CardTitle>
+                    <CardTitle className="text-white">Open Source</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">
+                    <p className="text-white/80">
                       I contribute to open source projects in my free time. I
                       believe in giving back to the community that has taught me
                       so much.
                     </p>
                   </CardContent>
                 </Card>
-                <Card>
+                <Card className="border-border/60 bg-card/20 shadow-sm backdrop-blur supports-[backdrop-filter]:bg-card/10">
                   <CardHeader>
-                    <CardTitle>Photography</CardTitle>
+                    <CardTitle className="text-white">Photography</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">
+                    <p className="text-white/80">
                       I enjoy landscape and street photography. It helps me see
                       the world from different perspectives and inspires my
                       design work.
