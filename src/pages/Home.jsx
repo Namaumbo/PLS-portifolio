@@ -152,11 +152,11 @@ export default function Home() {
                 link="https://project2.example.com"
               />
               <ProjectCard
-                title="AI Content Generator"
-                description="An AI-powered tool that generates marketing content based on prompts"
-                tags={["OpenAI", "Node.js", "MongoDB"]}
-                image="/mine.png"
-                link="https://project3.example.com"
+                title="School Management System"
+                description="School Management system"
+                tags={["React", "Postgres", "Laravel"]}
+                image="/skul.png"
+                link="#"
               />
             </div>
             <div className="flex justify-center mt-8">
