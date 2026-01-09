@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Contact() {
   return (
-    <div className="m-auto container py-12 relative overflow-hidden">
+    <div className="container mx-auto relative overflow-hidden px-4 py-12">
       {/* animated background objects */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0">
         <div className="pls-anim-float absolute -top-10 -left-12 h-56 w-56 rounded-full bg-red-500/10 blur-2xl" />
@@ -16,7 +16,7 @@ export default function Contact() {
       </div>
 
       {/* keep consistent with About/Skills/Projects pages */}
-      <div className="flex items-center mb-8">
+      <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-center">
         <Button variant="ghost" asChild className="mr-4">
           <Link to="/">
             <ArrowLeft className="mr-2 h-4 w-4" />
@@ -24,7 +24,7 @@ export default function Contact() {
           </Link>
         </Button>
 
-        <div className="ml-20">
+        <div>
           <h1 className="text-3xl font-bold">Contact Me</h1>
           <p className="text-muted-foreground mt-1">
             Let&apos;s build something great together.
@@ -32,7 +32,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="relative flex justify-center items-center md:flex-row flex-col gap-[14em]">
+      <div className="relative flex flex-col items-center justify-center gap-12 md:flex-row md:gap-32">
         <div className="space-y-4">
           <p className="text-muted-foreground">Hello, my name is</p>
 
@@ -105,17 +105,15 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="flex justify-center md:justify-end">
-          <div className="relative w-[320px] sm:w-[420px]">
+        <div className="flex w-full justify-center md:justify-end">
+          <div className="relative w-full max-w-[420px]">
             <div className="absolute -inset-6 bg-red-500/10 blur-2xl"></div>
             <img
               src="/profile.png"
               alt="Developer profile"
-              width={420}
-              height={460}
               loading="eager"
               decoding="async"
-              className="h-[460px] w-full object-cover"
+              className="aspect-[420/460] w-full rounded-xl object-cover"
             />
           </div>
         </div>

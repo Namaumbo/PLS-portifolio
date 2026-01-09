@@ -7,10 +7,13 @@ import FooterComponent from "./components/footer";
 const Layout = () => {
   return (
     <>
-      <NavBarComponent/>
-      <Outlet />
+      <NavBarComponent />
+      <div className="container mx-auto p-5">
+        <Outlet />
+      </div>
+
       <div className="mt-10">
-        < FooterComponent/>
+        <FooterComponent />
       </div>
     </>
   );
