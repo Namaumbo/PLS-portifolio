@@ -10,8 +10,8 @@ function NavBarComponent() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className=" m-auto container flex h-18 items-center justify-between">
+      <header className="w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="m-auto container flex h-16 items-center justify-between">
           <nav className="hidden gap-6 md:flex">
             <NavLink
               to="/about"

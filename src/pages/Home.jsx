@@ -4,6 +4,7 @@ import { ArrowRight, Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ProjectCard } from "@/components/project-card";
 import { SkillBadge } from "@/components/skill-badge";
+import { ParallaxImage } from "@/components/parallax-image";
 
 export default function Home() {
   return (
@@ -75,27 +76,42 @@ export default function Home() {
             </div>
           </div>
 
-          <div id="about" className="space-y-4">
-            <h2 className="text-secondary text-3xl font-bold tracking-tighter md:text-4xl/tight">
-              About Me
-            </h2>
-            <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              I'm a passionate full-stack developer with 3+ years of experience
-              building web applications. I specialize in React, Next.js, and
-              Node.js, with a strong focus on creating performant, accessible,
-              and visually appealing user interfaces.
-            </p>
-            <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              On the backend, I'm equally enthusiastic—I've built robust APIs
-              and services using Java (Spring Boot), Python (Flask), and
-              JavaScript (Express and Node.js), crafting scalable solutions for
-              a variety of use cases.
-            </p>
-            <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              When I'm not coding, you can find me hiking, reading sci-fi
-              novels, or experimenting with new technologies. I'm always looking
-              for new challenges and opportunities to grow as a developer.
-            </p>
+          <div id="about" className="space-y-6">
+            <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
+              <div className="space-y-4 md:flex-1">
+                <h2 className="text-secondary text-3xl font-bold tracking-tighter md:text-4xl/tight">
+                  About Me
+                </h2>
+                <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  I'm a passionate full-stack developer with 3+ years of
+                  experience building web applications. I specialize in React,
+                  Next.js, and Node.js, with a strong focus on creating
+                  performant, accessible, and visually appealing user
+                  interfaces.
+                </p>
+                <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  On the backend, I'm equally enthusiastic—I've built robust
+                  APIs and services using Java (Spring Boot), Python (Flask),
+                  and JavaScript (Express and Node.js), crafting scalable
+                  solutions for a variety of use cases.
+                </p>
+                <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  When I'm not coding, you can find me hiking, reading sci-fi
+                  novels, or experimenting with new technologies. I'm always
+                  looking for new challenges and opportunities to grow as a
+                  developer.
+                </p>
+              </div>
+
+              <div className="w-full max-w-[600px] mx-auto md:mx-0 md:w-[480px] lg:w-[520px] md:shrink-0">
+                <ParallaxImage
+                  src="/kind.svg"
+                  alt="Developer illustration"
+                  strength={20}
+                  className="drop-shadow-[0_18px_40px_rgba(0,0,0,0.35)]"
+                />
+              </div>
+            </div>
           </div>
 
           <div id="skills" className="space-y-4">
