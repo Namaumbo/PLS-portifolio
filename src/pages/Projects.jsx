@@ -22,6 +22,7 @@ export default function Projects() {
           tags={["Next.js", "Stripe", "Tailwind CSS"]}
           image="/mine.png"
           link="https://project1.example.com"
+          githubLink="https://github.com/Namaumbo"
         />
         <ProjectCard
           title="Task Management App"
@@ -29,6 +30,7 @@ export default function Projects() {
           tags={["React", "Firebase", "TypeScript"]}
           image="/mine.png"
           link="https://project2.example.com"
+          githubLink="https://github.com/Namaumbo"
         />
         <ProjectCard
           title="School Management System"
@@ -36,6 +38,7 @@ export default function Projects() {
           tags={["React", "Postgres", "Laravel"]}
           image="/skul.png"
           link="#"
+          githubLink="https://github.com/Namaumbo"
         />
         <ProjectCard
           title="Personal Finance Dashboard"
@@ -43,6 +46,7 @@ export default function Projects() {
           tags={["React", "D3.js", "Express"]}
           image="/mine.png"
           link="https://project4.example.com"
+          githubLink="https://github.com/Namaumbo"
         />
         <ProjectCard
           title="Social Media Analytics"
@@ -50,6 +54,7 @@ export default function Projects() {
           tags={["Next.js", "GraphQL", "PostgreSQL"]}
           image="/mine.png"
           link="https://project5.example.com"
+          githubLink="https://github.com/Namaumbo"
         />
         <ProjectCard
           title="Weather App"
@@ -57,6 +62,7 @@ export default function Projects() {
           tags={["React Native", "Weather API", "Geolocation"]}
           image="/mine.png"
           link="https://project6.example.com"
+          githubLink="https://github.com/Namaumbo"
         />
       </div>
     </div>
