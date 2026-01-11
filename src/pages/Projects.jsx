@@ -25,11 +25,11 @@ export default function Projects() {
           githubLink="https://github.com/Namaumbo"
         />
         <ProjectCard
-          title="Task Management App"
-          description="A collaborative task manager with real-time updates and team features"
-          tags={["React", "Firebase", "TypeScript"]}
-          image="/mine.png"
-          link="https://project2.example.com"
+          title="Stu Music AI"
+          description="A Spotify-like system where users upload an MP4 for AI song analysis and suggestions, or request analysis from a list of producers in Malawi."
+          tags={["React", "AI", "MP4"]}
+          image="/stu.png"
+          link="#"
           githubLink="https://github.com/Namaumbo"
         />
         <ProjectCard
