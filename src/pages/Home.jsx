@@ -143,6 +143,7 @@ export default function Home() {
                 tags={["Next.js", "Tailwind CSS", "TypeScript"]}
                 image="/weithAi2.png"
                 link="https://develop.d3jfk7zm1jpg1f.amplifyapp.com/"
+                githubLink="https://github.com/Namaumbo"
               />
               <ProjectCard
                 title="Task Management App"
@@ -150,6 +151,7 @@ export default function Home() {
                 tags={["React", "Firebase", "TypeScript"]}
                 image="/mine.png"
                 link="https://project2.example.com"
+                githubLink="https://github.com/Namaumbo"
               />
               <ProjectCard
                 title="School Management System"
@@ -157,6 +159,7 @@ export default function Home() {
                 tags={["React", "Postgres", "Laravel"]}
                 image="/skul.png"
                 link="#"
+                githubLink="https://github.com/Namaumbo"
               />
             </div>
             <div className="flex justify-center mt-8">
