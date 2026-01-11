@@ -17,6 +17,14 @@ export default function Projects() {
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <ProjectCard
+          title="WellthAi Platform"
+          description="A full-featured online platform for WellthAi used by the clinical officers to manage their patients and their data"
+          tags={["Next.js", "Tailwind CSS", "TypeScript"]}
+          image="/weithAi2.png"
+          link="https://develop.d3jfk7zm1jpg1f.amplifyapp.com/"
+          githubLink="https://github.com/Namaumbo"
+        />
+        <ProjectCard
           title="E-commerce Platform"
           description="A full-featured online store with cart, checkout, and payment processing"
           tags={["Next.js", "Stripe", "Tailwind CSS"]}
@@ -27,7 +35,7 @@ export default function Projects() {
         <ProjectCard
           title="Stu Music AI"
           description="A Spotify-like system where users upload an MP4 for AI song analysis and suggestions, or request analysis from a list of producers in Malawi."
-          tags={["React", "AI", "MP4"]}
+          tags={["React", "AI", "MP3", "flask", "openai"]}
           image="/stu.png"
           link="#"
           githubLink="https://github.com/Namaumbo"
