@@ -150,19 +150,23 @@
   }
 
   .pls-anim-float {
-    animation: pls-float 7s ease-in-out infinite;
+    /* keep background still (no decorative motion) */
+    animation: none !important;
   }
 
   .pls-anim-float-slow {
-    animation: pls-float 11s ease-in-out infinite;
+    /* keep background still (no decorative motion) */
+    animation: none !important;
   }
 
   .pls-anim-drift {
-    animation: pls-drift 9s ease-in-out infinite;
+    /* keep background still (no decorative motion) */
+    animation: none !important;
   }
 
   .pls-anim-spin {
-    animation: pls-spin-slow 22s linear infinite;
+    /* keep background still (no decorative motion) */
+    animation: none !important;
   }
 
   @media (prefers-reduced-motion: reduce) {

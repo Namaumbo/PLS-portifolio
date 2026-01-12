@@ -20,13 +20,14 @@ export function ParallaxImage({
   className,
   wrapperClassName,
   strength = 18, // px total-ish travel
+  enabled = false,
   ...imgProps
 }) {
   const imgRef = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
-    if (prefersReducedMotion) return;
+    if (!enabled || prefersReducedMotion) return;
     const el = imgRef.current;
     if (!el) return;
 
@@ -60,7 +61,7 @@ export function ParallaxImage({
       window.removeEventListener("resize", onScroll);
       if (raf) window.cancelAnimationFrame(raf);
     };
-  }, [prefersReducedMotion, strength]);
+  }, [enabled, prefersReducedMotion, strength]);
 
   return (
     <div className={cn("will-change-transform", wrapperClassName)}>

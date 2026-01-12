@@ -4,9 +4,12 @@ import { Button } from "@/components/ui/button";
 
 export default function Contact() {
   return (
-    <div className="container mx-auto relative overflow-hidden px-4 py-12">
+    <div className="container mx-auto relative px-4 py-12">
       {/* animated background objects */}
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none fixed inset-0 -z-10 overflow-hidden"
+      >
         <div className="pls-anim-float absolute -top-10 -left-12 h-56 w-56 rounded-full bg-red-500/10 blur-2xl" />
         <div className="pls-anim-float-slow absolute top-24 -right-16 h-72 w-72 rounded-full bg-white/5 blur-3xl" />
         <div className="pls-anim-drift absolute bottom-12 left-10 h-24 w-24 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm" />
@@ -15,110 +18,111 @@ export default function Contact() {
         <div className="pls-anim-float absolute bottom-10 left-1/3 h-10 w-10 rounded-lg bg-white/10 blur-[1px]" />
       </div>
 
-      {/* keep consistent with About/Skills/Projects pages */}
-      <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-        <Button variant="ghost" asChild className="mr-4">
-          <Link to="/">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Home
-          </Link>
-        </Button>
+      <div className="relative z-10">
+        {/* keep consistent with About/Skills/Projects pages */}
+        <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <Button variant="ghost" asChild className="mr-4">
+            <Link to="/">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Home
+            </Link>
+          </Button>
 
-        <div>
-          <h1 className="text-3xl font-bold">Contact Me</h1>
-          <p className="text-muted-foreground mt-1">
-            Let&apos;s build something great together.
-          </p>
-        </div>
-      </div>
-
-      <div className="relative flex flex-col items-center justify-center gap-12 md:flex-row md:gap-32">
-        <div className="space-y-4">
-          <p className="text-muted-foreground">Hello, my name is</p>
-
-          <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl text-white">
-            Daelo Namaumbo
-          </h2>
-
-          <p className="text-lg text-muted-foreground">
-            And I&apos;m a{" "}
-            <span className="text-red-500 font-semibold">
-              Full Stack Developer
-            </span>
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-3 pt-4">
-            <Button className="bg-foreground" asChild>
-              <a href="mailto:alex@example.com">
-                <Mail className="mr-2 h-4 w-4" />
-                Hire me
-              </a>
-            </Button>
-
-            <Button variant="outline" asChild>
-              <a href="https://calendly.com" target="_blank" rel="noreferrer">
-                Schedule a Call
-              </a>
-            </Button>
+          <div>
+            <h1 className="text-3xl font-bold">Contact Me</h1>
+            <p className="text-muted-foreground mt-1">
+              Let&apos;s build something great together.
+            </p>
           </div>
+        </div>
 
-          <div className="flex gap-2 pt-6">
-            <Button
-              className="bg-secondary"
-              asChild
-              size="icon"
-              variant="ghost"
-            >
-              <a
-                href="https://github.com/Namaumbo"
-                target="_blank"
-                rel="noreferrer"
+        <div className="relative flex flex-col items-center justify-center gap-12 md:flex-row md:gap-32">
+          <div className="space-y-4">
+            <p className="text-muted-foreground">Hello, my name is</p>
+
+            <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl text-white">
+              Daelo Namaumbo
+            </h2>
+
+            <p className="text-lg text-muted-foreground">
+              And I&apos;m a{" "}
+              <span className="text-red-500 font-semibold">
+                Full Stack Developer
+              </span>
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-3 pt-4">
+              <Button className="bg-foreground" asChild>
+                <a href="mailto:alex@example.com">
+                  <Mail className="mr-2 h-4 w-4" />
+                  Hire me
+                </a>
+              </Button>
+
+              <Button variant="outline" asChild>
+                <a href="https://calendly.com" target="_blank" rel="noreferrer">
+                  Schedule a Call
+                </a>
+              </Button>
+            </div>
+
+            <div className="flex gap-2 pt-6">
+              <Button
+                className="bg-secondary"
+                asChild
+                size="icon"
+                variant="ghost"
               >
-                <Github className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
-              </a>
-            </Button>
+                <a
+                  href="https://github.com/Namaumbo"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Github className="h-5 w-5" />
+                  <span className="sr-only">GitHub</span>
+                </a>
+              </Button>
 
-            <Button
-              className="bg-secondary"
-              asChild
-              size="icon"
-              variant="ghost"
-            >
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
-              </a>
-            </Button>
+              <Button
+                className="bg-secondary"
+                asChild
+                size="icon"
+                variant="ghost"
+              >
+                <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+                  <Linkedin className="h-5 w-5" />
+                  <span className="sr-only">LinkedIn</span>
+                </a>
+              </Button>
 
-            <Button
-              className="bg-secondary"
-              asChild
-              size="icon"
-              variant="ghost"
-            >
-              <a href="https://twitter.com" target="_blank" rel="noreferrer">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </a>
-            </Button>
+              <Button
+                className="bg-secondary"
+                asChild
+                size="icon"
+                variant="ghost"
+              >
+                <a href="https://twitter.com" target="_blank" rel="noreferrer">
+                  <Twitter className="h-5 w-5" />
+                  <span className="sr-only">Twitter</span>
+                </a>
+              </Button>
+            </div>
           </div>
-        </div>
 
-        <div className="flex w-full justify-center md:justify-end">
-          <div className="relative w-full max-w-[420px]">
-            <div className="absolute -inset-6 bg-red-500/10 blur-2xl"></div>
-            <img
-              src="/profile.png"
-              alt="Developer profile"
-              loading="eager"
-              decoding="async"
-              className="aspect-[420/460] w-full rounded-xl object-cover"
-            />
+          <div className="flex w-full justify-center md:justify-end">
+            <div className="relative w-full max-w-[420px]">
+              <div className="absolute -inset-6 bg-red-500/10 blur-2xl"></div>
+              <img
+                src="/profile.png"
+                alt="Developer profile"
+                loading="eager"
+                decoding="async"
+                className="aspect-[420/460] w-full rounded-xl object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
 }
-      

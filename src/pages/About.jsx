@@ -189,6 +189,14 @@ export default function AboutPage() {
                       ],
                     },
                     {
+                      title: "Full Stack PHP Intern",
+                      company: "Zomba Baptist Church",
+                      date: "2019 - 2020",
+                      description:
+                        "Introduced to the Laravel ecosystem while patching and improving internal inventory systems.",
+                      skills: ["PHP", "Laravel", "MySQL", "JavaScript", "HTML/CSS"],
+                    },
+                    {
                       title: "Junior Web Developer",
                       company: "Digital Agency",
                       date: "2017 - 2019",

@@ -20,10 +20,11 @@ function normalizeLink(link) {
 export function ProjectCard({
   title,
   description,
-  tags,
+  tags = [],
   image,
   link,
   githubLink,
+  kind,
 }) {
   const safeLink = normalizeLink(link);
   const safeGithubLink = normalizeLink(githubLink);
@@ -68,20 +69,29 @@ export function ProjectCard({
       </div>
       <div className="p-4 bg-black">
         <CardHeader>
-          <CardTitle className="text-white">{title}</CardTitle>
+          <div className="flex items-start justify-between gap-3">
+            <CardTitle className="text-white">{title}</CardTitle>
+            {kind ? (
+              <Badge variant="secondary" className="shrink-0">
+                {kind}
+              </Badge>
+            ) : null}
+          </div>
         </CardHeader>
         <CardContent>
           <p className="text-muted-foreground pb-3">{description}</p>
         </CardContent>
         <CardFooter>
           <div className="flex w-full flex-col gap-3">
-            <div className="flex flex-wrap gap-2">
-              {tags.map((tag) => (
-                <Badge key={tag} variant="secondary">
-                  {tag}
-                </Badge>
-              ))}
-            </div>
+            {tags.length ? (
+              <div className="flex flex-wrap gap-2">
+                {tags.map((tag) => (
+                  <Badge key={tag} variant="secondary">
+                    {tag}
+                  </Badge>
+                ))}
+              </div>
+            ) : null}
 
             {(safeLink || safeGithubLink) && (
               <div className="flex flex-wrap gap-3 mt-3">

@@ -5,8 +5,13 @@ import { Button } from "@/components/ui/button";
 import { ProjectCard } from "@/components/project-card";
 import { SkillBadge } from "@/components/skill-badge";
 import { ParallaxImage } from "@/components/parallax-image";
+import { featuredProjectIds, projects } from "@/data/projects";
 
 export default function Home() {
+  const featuredProjects = projects.filter((p) =>
+    featuredProjectIds.includes(p.id)
+  );
+
   return (
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
@@ -137,30 +142,17 @@ export default function Home() {
               Featured Projects
             </h2>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              <ProjectCard
-                title="WellthAi Platform"
-                description="A full-featured online platform for WellthAi used by the clinical officers to manage their patients and their data"
-                tags={["Next.js", "Tailwind CSS", "TypeScript"]}
-                image="/weithAi2.png"
-                link="https://develop.d3jfk7zm1jpg1f.amplifyapp.com/"
-                githubLink="https://github.com/Namaumbo"
-              />
-              <ProjectCard
-                title="Stu Music AI"
-                description="A Spotify-like system where users upload an MP4 for AI song analysis and suggestions, or request analysis from a list of producers in Malawi."
-                tags={["React", "AI", "MP3", "flask", "openai"]}
-                image="/stu.png"
-                link="#"
-                githubLink="https://github.com/Namaumbo"
-              />
-              <ProjectCard
-                title="School Management System"
-                description="School Management system"
-                tags={["React", "Postgres", "Laravel"]}
-                image="/skul.png"
-                link="#"
-                githubLink="https://github.com/Namaumbo"
-              />
+              {featuredProjects.map((p) => (
+                <ProjectCard
+                  key={p.id}
+                  title={p.title}
+                  description={p.description}
+                  tags={p.tags}
+                  image={p.image}
+                  link={p.link}
+                  githubLink={p.githubLink}
+                />
+              ))}
             </div>
             <div className="flex justify-center mt-8">
               <Button className="bg-foreground text-white" asChild>
