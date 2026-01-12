@@ -222,10 +222,10 @@ export default function AboutPage() {
                   // },
                   {
                     title: "Bachelor of Science in Computer Science",
-                    company: "University of California, Berkeley",
-                    date: "2011 - 2015",
+                    company: "University of Malawi",
+                    date: "2017 - 2022",
                     description:
-                      "Graduated with honors. Active member of the Web Development Club and participated in multiple hackathons.",
+                      "Completed undergraduate studies in Computer Science, building a strong foundation in software development and problem-solving.",
                     skills: [],
                   },
                   {
