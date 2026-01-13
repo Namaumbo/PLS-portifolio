@@ -29,7 +29,7 @@ export default function Contact() {
           </Button>
 
           <div>
-            <h1 className="text-3xl font-bold">Contact Me</h1>
+            <h1 className="text-3xl font-bold text-white">Contact Me</h1>
             <p className="text-muted-foreground mt-1">
               Let&apos;s build something great together.
             </p>
@@ -53,7 +53,7 @@ export default function Contact() {
 
             <div className="flex flex-col sm:flex-row gap-3 pt-4">
               <Button className="bg-foreground" asChild>
-                <a href="mailto:alex@example.com">
+                <a href="mailto:daelo.namaumbo@gmail.com">
                   <Mail className="mr-2 h-4 w-4" />
                   Hire me
                 </a>

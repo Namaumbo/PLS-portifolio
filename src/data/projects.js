@@ -10,17 +10,17 @@ export const projects = [
     link: "https://develop.d3jfk7zm1jpg1f.amplifyapp.com/",
     githubLink: "https://github.com/Namaumbo",
   },
-  {
-    id: "ecommerce-platform",
-    kind: "app",
-    title: "E-commerce Platform",
-    description:
-      "A full-featured online store with cart, checkout, and payment processing",
-    tags: ["Next.js", "Stripe", "Tailwind CSS"],
-    image: "/mine.png",
-    link: "https://project1.example.com",
-    githubLink: "https://github.com/Namaumbo",
-  },
+  // {
+  //   id: "ecommerce-platform",
+  //   kind: "app",
+  //   title: "E-commerce Platform",
+  //   description:
+  //     "A full-featured online store with cart, checkout, and payment processing",
+  //   tags: ["Next.js", "Stripe", "Tailwind CSS"],
+  //   image: "/mine.png",
+  //   link: "https://project1.example.com",
+  //   githubLink: "https://github.com/Namaumbo",
+  // },
   {
     id: "stu-music-ai",
     kind: "app",
@@ -45,35 +45,35 @@ export const projects = [
   {
     id: "personal-finance-dashboard",
     kind: "app",
-    title: "Personal Finance Dashboard",
+    title: "Fitting Management System",
     description:
-      "A dashboard to track expenses, income, and investments with data visualization",
-    tags: ["React", "D3.js", "Express"],
-    image: "/mine.png",
-    link: "https://project4.example.com",
+      "A full-stack web application for managing golf club fitting appointments, customer profiles, and fitting history. Sequelize ORM.",
+    tags: ["React", "Express","Sequelize ORM","PostgreSQL"],
+    image: "/fitting.png",
+    link: "#",
     githubLink: "https://github.com/Namaumbo",
   },
-  {
-    id: "social-media-analytics",
-    kind: "app",
-    title: "Social Media Analytics",
-    description:
-      "A tool to track and analyze social media performance across platforms",
-    tags: ["Next.js", "GraphQL", "PostgreSQL"],
-    image: "/mine.png",
-    link: "https://project5.example.com",
-    githubLink: "https://github.com/Namaumbo",
-  },
-  {
-    id: "weather-app",
-    kind: "app",
-    title: "Weather App",
-    description: "A beautiful weather application with forecasts and location-based data",
-    tags: ["React Native", "Weather API", "Geolocation"],
-    image: "/mine.png",
-    link: "https://project6.example.com",
-    githubLink: "https://github.com/Namaumbo",
-  },
+  // {
+  //   id: "social-media-analytics",
+  //   kind: "app",
+  //   title: "Social Media Analytics",
+  //   description:
+  //     "A tool to track and analyze social media performance across platforms",
+  //   tags: ["Next.js", "GraphQL", "PostgreSQL"],
+  //   image: "/mine.png",
+  //   link: "https://project5.example.com",
+  //   githubLink: "https://github.com/Namaumbo",
+  // },
+  // {
+  //   id: "weather-app",
+  //   kind: "app",
+  //   title: "Weather App",
+  //   description: "A beautiful weather application with forecasts and location-based data",
+  //   tags: ["React Native", "Weather API", "Geolocation"],
+  //   image: "/mine.png",
+  //   link: "https://project6.example.com",
+  //   githubLink: "https://github.com/Namaumbo",
+  // },
 ];
 
 // Keep Home “Featured Projects” in sync from one place.
@@ -82,5 +82,6 @@ export const featuredProjectIds = [
   "stu-music-ai",
   "school-management-system",
 ];
+
 
 

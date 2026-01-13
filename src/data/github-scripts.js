@@ -6,6 +6,19 @@ export const GITHUB_USERNAME = "Namaumbo";
 
 // Example:
 // export const SCRIPT_REPOS = ["my-cli-tool", "bulk-rename-script"];
-export const SCRIPT_REPOS = [];
+export const SCRIPT_REPOS = [
+//     "automated-reporting-system",
+//     "flask-rest-api",
+//     "scheduled-tasks",
+//     "sftp-email-delivery",
+//     "credit-applications",
+//     "notifications",
+//     "report-generation",
+//     "file-combination",
+//     "data-processing",
+//     "stakeholder-notifications",
+// ];
+]
+
 
 

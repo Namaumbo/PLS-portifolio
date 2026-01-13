@@ -31,7 +31,7 @@ export default function AboutPage() {
             Back to Home
           </Link>
         </Button>
-        <h1 className="text-3xl font-bold">About Me</h1>
+        <h1 className="text-3xl font-bold text-white">About Me</h1>
       </div>
 
       <div className="grid gap-8 md:grid-cols-3 ">
@@ -43,20 +43,20 @@ export default function AboutPage() {
           <Tabs defaultValue="bio" className="w-full">
             <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4">
               <TabsTrigger value="bio">
-                <User className="h-4 w-4" />
-                <span className="hidden sm:inline">Bio</span>
+                <User className="h-4 w-4 text-white" />
+                <span className="hidden sm:inline text-white">Bio</span>
               </TabsTrigger>
               <TabsTrigger value="experience">
-                <Briefcase className="h-4 w-4" />
-                <span className="hidden sm:inline">Experience</span>
+                <Briefcase className="h-4 w-4 text-white" />
+                <span className="hidden sm:inline text-white">Experience</span>
               </TabsTrigger>
               <TabsTrigger value="education">
-                <GraduationCap className="h-4 w-4" />
-                <span className="hidden sm:inline">Education</span>
+                <GraduationCap className="h-4 w-4 text-white" />
+                <span className="hidden sm:inline text-white">Education</span>
               </TabsTrigger>
               <TabsTrigger value="interests">
-                <Heart className="h-4 w-4" />
-                <span className="hidden sm:inline">Interests</span>
+                <Heart className="h-4 w-4 text-white" />
+                <span className="hidden sm:inline text-white">Interests</span>
               </TabsTrigger>
             </TabsList>
 
@@ -212,14 +212,7 @@ export default function AboutPage() {
             <TabsContent value="education" className="mt-6">
               <Timeline
                 items={[
-                  // {
-                  //   title: "Master of Computer Science",
-                  //   company: "Stanford University",
-                  //   date: "2015 - 2017",
-                  //   description:
-                  //     "Specialized in Human-Computer Interaction and Web Technologies. Thesis on 'Improving User Experience in Progressive Web Applications'.",
-                  //   skills: [],
-                  // },
+               
                   {
                     title: "Bachelor of Science in Computer Science",
                     company: "University of Malawi",

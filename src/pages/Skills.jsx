@@ -16,7 +16,7 @@ export default function SkillsPage() {
           </Link>
         </Button>
         <div>
-          <h1 className="text-3xl font-bold">Skills</h1>
+          <h1 className="text-3xl font-bold text-white">Skills</h1>
           <p className="text-muted-foreground mt-1">
             Tools and technologies I use across the stack.
           </p>
@@ -27,8 +27,8 @@ export default function SkillsPage() {
         <Card className="bg-card/20 backdrop-blur supports-[backdrop-filter]:bg-card/10">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Server className="h-5 w-5" />
-              Backend
+              <Server className="h-5 w-5 text-white" />
+              <span className="text-white">Backend</span>
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -43,8 +43,8 @@ export default function SkillsPage() {
         <Card className="bg-card/20 backdrop-blur supports-[backdrop-filter]:bg-card/10">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Database className="h-5 w-5" />
-              Databases & Storage
+              <Database className="h-5 w-5 text-white" />
+              <span className="text-white">Databases & Storage</span>
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -60,8 +60,8 @@ export default function SkillsPage() {
         <Card className="bg-card/20 backdrop-blur supports-[backdrop-filter]:bg-card/10">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Layers className="h-5 w-5" />
-              Frontend
+              <Layers className="h-5 w-5 text-white"  />
+              <span className="text-white">Frontend</span>
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -70,6 +70,22 @@ export default function SkillsPage() {
               <SkillBadge name="JavaScript (React)" />
               <SkillBadge name="Next.js" />
               <SkillBadge name="Tailwind CSS" />
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-card/20 backdrop-blur supports-[backdrop-filter]:bg-card/10">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Server className="h-5 w-5 text-white" />
+              <span className="text-white">Docker & Containerization</span>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="flex flex-wrap gap-2">
+              <SkillBadge name="Docker" />
+              <SkillBadge name="Docker Compose" />
+              <SkillBadge name="Containerization" />
             </div>
           </CardContent>
         </Card>
