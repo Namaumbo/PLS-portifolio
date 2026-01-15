@@ -108,7 +108,7 @@ export default function Projects() {
             image="https://img.icons8.com/3d-fluency/94/python.png"
             link="#"
             githubLink="https://github.com/MarketSA/weekly_report_for_gen.git"
-          />
+          /> 
         </TabsContent>
       </Tabs>
     </div>
