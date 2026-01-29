@@ -10,17 +10,17 @@ export const projects = [
     link: "https://develop.d3jfk7zm1jpg1f.amplifyapp.com/",
     githubLink: "https://github.com/Namaumbo",
   },
-  // {
-  //   id: "ecommerce-platform",
-  //   kind: "app",
-  //   title: "E-commerce Platform",
-  //   description:
-  //     "A full-featured online store with cart, checkout, and payment processing",
-  //   tags: ["Next.js", "Stripe", "Tailwind CSS"],
-  //   image: "/mine.png",
-  //   link: "https://project1.example.com",
-  //   githubLink: "https://github.com/Namaumbo",
-  // },
+  {
+    id: "zomba-baptist-church-website",
+    kind: "app",
+    title: "Zomba Baptist Church Website",
+    description:
+      "A website for the Zomba Baptist Church",
+    tags: ["react.js", "strapi cms", "Tailwind CSS"],
+    image: "/Screenshot_20260129_081243.png",
+    link: "https://zombabaptistchurch.org/",
+    githubLink: "https://github.com/Namaumbo",
+  },
   {
     id: "stu-music-ai",
     kind: "app",
