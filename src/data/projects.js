@@ -53,17 +53,17 @@ export const projects = [
     link: "#",
     githubLink: "https://github.com/Namaumbo",
   },
-  // {
-  //   id: "social-media-analytics",
-  //   kind: "app",
-  //   title: "Social Media Analytics",
-  //   description:
-  //     "A tool to track and analyze social media performance across platforms",
-  //   tags: ["Next.js", "GraphQL", "PostgreSQL"],
-  //   image: "/mine.png",
-  //   link: "https://project5.example.com",
-  //   githubLink: "https://github.com/Namaumbo",
-  // },
+  {
+    id: "social-media-analytics",
+    kind: "app",
+    title: "Social Media Analytics",
+    description:
+      "A tool to track and analyze social media performance across platforms",
+    tags: ["Next.js", "GraphQL", "PostgreSQL"],
+    image: "/mine.png",
+    link: "https://project5.example.com",
+    githubLink: "https://github.com/Namaumbo",
+  },
   // {
   //   id: "weather-app",
   //   kind: "app",
@@ -74,6 +74,17 @@ export const projects = [
   //   link: "https://project6.example.com",
   //   githubLink: "https://github.com/Namaumbo",
   // },
+
+    {
+    id: "zomba-baptist-church-data-collection-system",
+    kind: "app",
+    title: "Zomba Baptist Church Data collection system",
+    description: "A system for the Zomba Baptist Church to collect data from their members",
+    tags: ["Next.js", "Tailwind CSS"],
+    image: "/Screenshot_20260428_151948.png",
+    link: "https://zomba-data-collection.netlify.app/",
+    githubLink: "https://github.com/Namaumbo",
+  },
 ];
 
 // Keep Home “Featured Projects” in sync from one place.
@@ -81,6 +92,7 @@ export const featuredProjectIds = [
   "wellthai-platform",
   "stu-music-ai",
   "school-management-system",
+  "zomba-baptist-church-data-collection-system",
 ];
 
 
